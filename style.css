@@ -1,0 +1,83 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+
+
+#infoForm {
+	margin-left: 28.5cm;
+	z-index: 3;
+	right: 45%;
+	top: 50%;
+	position: absolute;
+	padding: 5px;
+	border-style: double;
+	background-color: white;
+}
+#storage {
+	right: 17%;
+	top: 70%;
+	position: absolute;
+	padding: 5px;
+}
+#logo {
+	left: 40%;
+	top: 1cm;
+	position: absolute;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Alatsi', sans-serif;
+}
+#pics {
+	margin-top: 4.5cm;
+	margin-bottom: 230px;
+	grid-column: 1;
+	padding-left: 20px;
+}
+
+body {
+	font-size: 30px;
+	display: inline-grid;
+	background-color: tan;
+}
+
+.inputBox {
+	font-size: 30px;
+	margin-top:	20px;
+}
+.addCart{
+	border-radius: 15px;
+	background-color: rgb(98,49,14);
+	font-size: 	22px;
+	color: rgb(30,144,255);
+	height:30px;
+}
+
+#cart {
+	margin-top: 4.5cm;
+	border-style: double;
+	width:300px;
+	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	background-color: white;
+}
+
+.dozen {
+	width: 145px;
+	font-size: 	22px;
+}
+
+#clearCart {
+	font-size: 	22px;
+}
+
+#time {
+	margin-right: 20px;
+	width: 300px;
+	font-size: 30px;
+	margin-top:	20px;
+}
+#AmPm {
+	width: 300px;
+	font-size: 30px;
+	margin-top:	20px;
+}

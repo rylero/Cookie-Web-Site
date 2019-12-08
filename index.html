@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<div id="logo">
+		The
+		<br>
+		<span class="moveUp">Cookie</span> <img src="logo.png" id="logoimg" width="100"> <span class="moveUp">Store</span>
+	</div>
+
+	<!-- PICS -->
+	<div id="pics">
+		<img src="chocolateChip.jpg" width="200px">
+		<br>
+		Chocolate Chip, $6.50 <button type="button" class="addCart" onclick="addToCart('Chocolate Chip')">Add to Cart</button>
+		<br>
+		<br>
+		<img src="peanutButter.jpg" width="200px">
+		<br>
+		Peanut Butter, $6.50 <button type="button" class="addCart" onclick="addToCart('Peanut Butter')">Add to Cart</button>
+		<br>
+		<br>
+		<img src="neimanMarcus.jpg" width="200px">
+		<br>
+		Neiman Marcus, $6.50 <button type="button" class="addCart" onclick="addToCart('Neiman Marcus')">Add to Cart</button>
+		<br>
+		<br>
+		<img src="tigerCookies.jpg" width="200px">
+		<br>
+		Tiger Cookies, $6.50 <button type="button" class="addCart" onclick="addToCart('Tiger Cookies')">Add to Cart</button>
+		<br>
+		<br>
+		<img src="snickerdoodle.jpg" width="200px">
+		<br>
+		Snickerdoodle, $6.50 <button type="button" class="addCart" onclick="addToCart('Snickerdoodle')">Add to Cart</button>
+	</div>
+
+	<div id="infoForm">
+		<form action="https://liveformhq.com/form/d171fae1-37ef-4584-9267-bafa83d13c38" method="POST" accept-charset="utf-8">
+			<input id="firstNameInput" class="inputBox" name="firstname" placeholder="First Name">
+			<br>
+			<input id="lastNameInput" class="inputBox" name="lastname" placeholder="Last Name">
+			<br>
+			<input id="emailInput" class="inputBox" type="email" name="email" placeholder="Email">
+			<br>
+			<input id="addressInput" class="inputBox" name="address" placeholder="Address">
+			<br>
+			<select name="time" id = "time">
+				<option id="dec5">December 16</option>
+				<option id="dec5">December 17</option>
+				<option id="dec5">December 18</option>
+				<option id="dec5">December 19</option>
+				<option id="dec5">December 20</option>
+				<option id="dec5">December 21</option>
+				<option id="dec5">December 22</option>
+				<option id="dec5">December 23</option>
+				<option id="dec5">December 24</option>
+				<option id="dec5">January 1</option>
+				<option id="dec5">January 2</option>
+				<option id="dec5">January 3</option>
+				<option id="dec5">January 4</option>
+				<option id="dec5">January 5</option>
+			</select>
+			<select name="ampm" id="AmPm">
+				<option value="9-12">9am-12pm</option>
+				<option value="12-3">12-3pm</option>
+			</select>
+			<br>
+			<input type="hidden"  name="ChocolateChip" id="ChocolateChip" value=0>
+			<input type="hidden"  name="PeanutButter" id="PeanutButter" value=0>
+			<input type="hidden"  name="NeimanMarcus" id="NeimanMarcus" value=0>
+			<input type="hidden"  name="TigerCookies" id="TigerCookies" value=0>
+			<input type="hidden"  name="Snickerdoodle" id="Snickerdoodle" value=0>
+			<button type="submit" class="inputBox" onclick="purchase()" >Purchase</button> 
+		</form>
+	</div>
+
+	<span id="storage"> 
+	Cookies stay fresh for up 2-3 days in a <br>
+	airtight container and up to 3 months in the freezer.
+	</span>
+
+
+	<div id="cart">
+		Cart:
+		<ul id="cartList">
+		</ul>
+		<button type="button" id="clearCart" onclick="clearCart()">Clear Cart</button>
+		<p id="total">$0<p>
+	</div>
+
+	<script src="action.js"></script>
+</body>
+</html>
