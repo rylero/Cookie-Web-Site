@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cbuffemy/public_html/heatherdave/
+    - /bin/cp -R . $DEPLOYPATH
+    
