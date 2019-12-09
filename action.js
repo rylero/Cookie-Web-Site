@@ -11,8 +11,6 @@ var tc;
 var sn;
 var cform = document.forms[0];
 
-var time;
-
 function addToCart(name) {
 	var node = document.createElement("LI");
 	node.appendChild(document.createTextNode(name));
