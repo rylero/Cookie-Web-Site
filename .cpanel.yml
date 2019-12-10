@@ -1,6 +1,15 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/cbuffemy/public_html/heatherdave/
-    - /bin/cp -R . $DEPLOYPATH
+    - export DEPLOYPATH=/home4/cbuffemy/public_html/heatherdave/
+    - /bin/cp action.js $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
+    - /bin/cp chocolateChip.jpg $DEPLOYPATH
+    - /bin/cp neimanMarcus.jpg $DEPLOYPATH
+    - /bin/cp peanutButter.jpg $DEPLOYPATH
+    - /bin/cp snickerdoodle.jpg $DEPLOYPATH
+    - /bin/cp tigerCookies.jpg $DEPLOYPATH
+
     
