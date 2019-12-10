@@ -1,78 +1,228 @@
 /* fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
 
+/* base elements */
 
-#infoForm {
-	margin-left: 28.5cm;
-	z-index: 3;
-	right: 45%;
-	top: 50%;
-	position: absolute;
-	padding: 5px;
-	border-style: double;
-	background-color: white;
-}
-#storage {
-	right: 17%;
-	top: 70%;
-	position: absolute;
-	padding: 5px;
-}
-#logo {
-	left: 40%;
-	top: 1cm;
-	position: absolute;
-	text-align: center;
-	font-size: 50px;
-	font-family: 'Alatsi', sans-serif;
-}
-#pics {
-	margin-top: 4.5cm;
-	margin-bottom: 230px;
-	grid-column: 1;
-	padding-left: 20px;
+html, 
+body {
+	margin: 0;
+  padding: 0;
 }
 
 body {
 	font-size: 30px;
-	display: inline-grid;
 	background-color: tan;
+	font-family: sans-serif;
 }
 
-.inputBox {
-	font-size: 30px;
-	margin-top:	20px;
+/* layout */
+
+#logo {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Alatsi', sans-serif;
+	border-bottom: 1px solid #383838;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	line-height: 100px;
 }
+
+#logoimg {
+	height: 100px;
+	width: 100px;
+	padding-left: 5px;
+}
+
+.main-content {
+	box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.left-col,
+.right-col {
+	box-sizing: inherit;
+  min-width: 0;
+	flex-basis: auto;
+}
+
+.left-col {
+	width: 60%;
+}
+
+.right-col {
+	width: 40%;
+}
+
+/* cookie listing */
+
+.item {
+	display: flex;
+	padding: 15px 0;
+}
+
+.item-image {
+	max-width: 200px;
+	height: auto;
+}
+
+.item-content {
+	padding-left: 10px;
+}
+
 .addCart{
-	border-radius: 15px;
+	border-radius: 20px;
 	background-color: rgb(98,49,14);
+	border-color: rgb(70, 33, 6);
 	font-size: 	22px;
-	color: rgb(30,144,255);
-	height:30px;
+	color: #fff;
+	height: 40px;
+	line-height: 38px;
+	padding: 0 10px;
+	margin-top: 10px;
+	cursor: pointer;
 }
 
-#cart {
-	margin-top: 4.5cm;
-	border-style: double;
-	width:300px;
-	position: absolute;
-  	top: 0px;
-  	right: 0px;
-  	background-color: white;
+/* cart */
+
+.cart {
+	background: #fff;
+	border: 1px #000 double;
+	padding: 20px;
 }
 
-.dozen {
-	width: 145px;
-	font-size: 	22px;
+#cartList {
+	background: #fafafa;
+	border: 1px solid #ddd;
+	margin: 10px 0 0 0;
+	padding: 10px 10px 10px 30px;
+}
+
+#cartList li {
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+.cartTotal {
+	margin: 20px 0 10px 0;
+	border-bottom: 1px solid #ddd;
+	color: #777
+}
+
+#total {
+	color: #000;
+}
+
+.clearCart {
+	text-align: right;
 }
 
 #clearCart {
-	font-size: 	22px;
+	color: rgb(159, 55, 55);
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-width: 2px;
+	height: 26px;
+	line-height: 24x;
+	border-radius: 13px;
+	font-size: 14px;
 }
 
-#time {
-	margin-right: 20px;
-	width: 300px;
-	font-size: 30px;
-	margin-top:	20px;
+.formTitle {
+	margin: 30px 0 0 0;
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.inputBox,
+.submitButton {
+	margin-top: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.inputBox {
+	font-size: 16px;
+	height: 35px;
+	padding: 10px;
+	box-shadow: 0 0 3px #000 inset;
+	moz-
+}
+
+.submitButton {
+	height: 50px;
+	line-height: 48px;
+	background-color: rgb(3, 94, 184);
+	border: 1px solid rgb(2, 52, 101);
+	border-radius: 25px;
+	border-bottom-width: 2px; 
+	cursor: pointer;
+	color: #fff;
+	font-size: 	28px;
+	margin-top: 30px;
+}
+
+#storage {
+	display: block;
+	font-size: 16px;
+	color: #777;
+	line-height: 1.5;
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
+	margin-top: 35px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 780px) {
+
+	.header {
+		font-size: 35px;
+	}
+	
+	.left-col,
+	.right-col {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#logo {
+		font-size: 25px;
+		line-height: 50px;
+		margin-bottom: 0;
+	}
+
+	#logoimg {
+		width: 50px;
+		height: 50px;
+	}
+	
+	.item {
+		display: block;
+	}
+	
+	.item-image {
+		max-width: 100%;
+	}
+	
+	.item-content {
+		padding-left: 0px;
+	}
+
+	.addCart {
+		width: 100%;
+	}
+
 }
