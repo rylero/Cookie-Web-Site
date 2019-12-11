@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>	</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<title>The Cookie Store</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="UTF-8">
 </head>
@@ -9,6 +10,7 @@
 
 	<div id="logo" class="header">
 		<span class="moveUp">The Cookie</span> <img src="logo.png" id="logoimg" width="100"> <span class="moveUp">Store</span>
+		<!-- <span style="font-size: 17px;">ryancookiestore@gmail.com</span> -->
 	</div>
 
 	<div class="main-content">
@@ -20,35 +22,50 @@
 				<div class="item">
 						<img class="item-image" src="chocolateChip.jpg">
 						<div class="item-content">
-							Chocolate Chip, $6.50 <button type="button" class="addCart" onclick="addToCart('Chocolate Chip')">Add to Cart</button>
+							Chocolate Chip<br>
+							<span style="font-size: 20px;">Traditional chocolate chip cookie.<br>
+							$6.50 / per dozen<br></span>
+							<button type="button" class="addCart" onclick="addToCart('Chocolate Chip')">Add to Cart</button>
 						</div>
 				</div>
 
 				<div class="item">
 						<img class="item-image" src="peanutButter.jpg">
 						<div class="item-content">
-							Peanut Butter, $6.50 <button type="button" class="addCart" onclick="addToCart('Peanut Butter')">Add to Cart</button>
+							Peanut Butter<br>
+							<span style="font-size: 20px;">Peanut butter cookie with a Hershey kiss.<br>
+							$6.50 / per dozen<br></span>
+							<button type="button" class="addCart" onclick="addToCart('Peanut Butter')">Add to Cart</button>
 						</div>
 				</div>
 
 				<div class="item">
 						<img class="item-image" src="neimanMarcus.jpg">
 						<div class="item-content">
-								Neiman Marcus, $6.50 <button type="button" class="addCart" onclick="addToCart('Neiman Marcus')">Add to Cart</button>
+								Neiman Marcus<br>
+								<span style="font-size: 20px;">Oatmeal chocolate chip cookie with shredded Hershey bar.<br>
+									$6.50 / per dozen<br></span>
+								<button type="button" class="addCart" onclick="addToCart('Neiman Marcus')">Add to Cart</button>
 						</div>
 				</div>
 
 				<div class="item">
 						<img class="item-image" src="tigerCookies.jpg">
 						<div class="item-content">
-								Tiger Cookies, $6.50 <button type="button" class="addCart" onclick="addToCart('Tiger Cookies')">Add to Cart</button>
+								Tiger Cookies<br>
+								<span style="font-size: 20px;">Cookie with Frosted Flakes and swirled chocolate.<br>
+								$6.50 / per dozen<br></span>
+								<button type="button" class="addCart" onclick="addToCart('Tiger Cookies')">Add to Cart</button>
 						</div>
 				</div>
 
 				<div class="item">
 						<img class="item-image" src="snickerdoodle.jpg">
 						<div class="item-content">
-								Snickerdoodle, $6.50 <button type="button" class="addCart" onclick="addToCart('Snickerdoodle')">Add to Cart</button>
+								Snickerdoodle<br>
+						   	<span style="font-size: 20px;">Cinnamon and sugar cookie.<br>
+								$6.50 / per dozen<br></span>
+								<button type="button" class="addCart" onclick="addToCart('Snickerdoodle')">Add to Cart</button>
 						</div>
 				</div>
 
@@ -71,7 +88,7 @@
 
 				<div class="checkout" id="infoForm">
 					<p class="formTitle">Checkout</p>
-					<form action="https://liveformhq.com/form/d171fae1-37ef-4584-9267-bafa83d13c38" method="POST" accept-charset="utf-8">
+					<form action="https://liveformhq.com/form/d171fae1-37ef-4584-9267-bafa83d13c38?_noredirect" method="POST" accept-charset="utf-8">
 						<input id="firstNameInput" class="inputBox" name="firstname" placeholder="First Name">
 						<br>
 						<input id="lastNameInput" class="inputBox" name="lastname" placeholder="Last Name">
@@ -103,10 +120,10 @@
 						<input type="hidden"  name="NeimanMarcus" id="NeimanMarcus" value=0>
 						<input type="hidden"  name="TigerCookies" id="TigerCookies" value=0>
 						<input type="hidden"  name="Snickerdoodle" id="Snickerdoodle" value=0>
-						<button type="submit" class="submitButton" onclick="purchase()" >Purchase Cookies</button> 
+						<button type="submit" class="submitButton" onclick="purchase()" >Purchase Cookies</button>
 					</form>
-					<span id="storage"> 
-						Cookies stay fresh for up 2-3 days in a <br>
+					<span id="storage">
+						Cookies stay fresh for up 2-3 days in an <br>
 						airtight container and up to 3 months in the freezer.
 					</span>
 				</div>
@@ -114,9 +131,8 @@
 			</div>
 
 		</div>
-	
-	</div>
 
+	</div>
 	<script src="action.js"></script>
 </body>
 </html>

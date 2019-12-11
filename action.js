@@ -14,7 +14,7 @@ var cform = document.forms[0];
 function addToCart(name) {
 	var node = document.createElement("LI");
 	node.appendChild(document.createTextNode(name));
-	cartList.appendChild(node);     
+	cartList.appendChild(node);
 	totalCost+=6.50;
 	total.innerHTML = "$" + totalCost;
 	if (name.startsWith("Chocolate Chip")) {
@@ -39,6 +39,6 @@ function clearCart() {
 	cform.elements["Snickerdoodle"].value = 0;
 }
 
-function purchase(){
-	alert("Thank you for ordering.\nI will collect the $"+totalCost+" when I deliver the cookies.");
+function purchase() {
+	alert("Thank you for your order!\n\nYour cookies will be delivered on "+cform.elements["time"].value+".\nPlease pay $"+totalCost+" in cash or check at delivery.");
 }
