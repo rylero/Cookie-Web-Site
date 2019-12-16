@@ -74,9 +74,16 @@ body {
 	padding: 15px 0;
 }
 
+.item:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .item-image {
 	max-width: 200px;
 	height: auto;
+	display: block; float: left;
 }
 
 .item-content {
