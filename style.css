@@ -69,7 +69,8 @@ body {
 /* cookie listing */
 
 .item {
-	display: flex;
+	display: block;
+	position: relative;
 	padding: 15px 0;
 }
 
@@ -79,7 +80,7 @@ body {
 }
 
 .item-content {
-	padding-left: 10px;
+	padding-left: 210px;
 }
 
 .addCart{
@@ -219,6 +220,8 @@ body {
 
 	.item-image {
 		max-width: 100%;
+		float: none;
+		padding-bottom: 10px;
 	}
 
 	.item-content {
